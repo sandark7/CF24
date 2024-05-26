@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Приключения технологических спикеров</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="slides.css">
+  </head>
+  <body class="shower list">
+    <header class="caption">
+      <h1>Приключения технологических спикеров</h1>
+    </header>
+    
+    <section id="" class="slide label-header rbn bgi clear">
+      <h2 style="padding-left: 0;">Приключения технологических спикеров</h2>
+      <img src="pictures/qr-papka.png" class="place b" style="width: 350px;margin-bottom: 40px;">
+      <p class="end-link" style="top:45%;left:3%">Андрей Смирнов</p>
+      <p class="end-link" style="top:70%;">Серафима Чекулаева</p>
+      <p class="end-link" style="top:45%;left:70%">Тимур Гафиулин</p>
+      <p class="end-link" style="top:70%;left:70%">Саша Прокшина</p>
+    </section>
+    
+    <div class="progress"></div>
+    <script src="shower/shower.min.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('keyup', (e) => {
+        if ((e.code === "ArrowRight" || e.code === "Space") && (document.getElementsByClassName('video')[0].classList.length === 4)) {
+            document.getElementById("miro").play();
+        };
+      });
+    </script>
+  </body>
+</html>
